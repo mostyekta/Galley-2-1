@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+@media screen and (max-width:700px){
+    h1 ,.text{
+        background-color: #dde8dd;
+       border-radius: 5px;
+       box-shadow: 0 3px 3px hsl(240, 100%, 10%);
+       
+    }
+
+  }  
+@media screen and (max-width:400px){
+    h1,.text{
+        background-color: #dde8dd;
+       border-radius: 5px;
+       width: 320px;
+       padding: 5px;
+      text-align: center;
+      box-shadow: 0 3px 3px hsl(240, 100%, 10%)
+    }
+}
+
+body{
+    background-image:url('natur4.webp') ;
+    background-position-x: right;
+    background-size: cover;
+    
+}
+   fieldset{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: none;
+}   
+h1,.text{
+    text-align: center;
+    margin: 15px;
+    color: rgb(2, 2, 129);    
+}
+h5{
+    text-align: center;
+    font-size: 17px;
+    color: rgb(9, 9, 105);
+}
+form{
+    width: 420px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color:hsla(240, 60%, 95%, 0.388);
+    border-radius: 10px;
+    box-shadow: 0 3px 3px hsl(240, 100%, 10%);
+    background-image: linear-gradient(rgba(1, 82, 1, 0.514), rgba(13, 13, 138, 0.363));
+
+}
+
+.sub-button{
+    background-color:#4CAF50;
+    
+}
+.sub-button:hover{
+    background-color:#388330;
+    color: white;
+}
+textarea{
+    background-color: rgb(255, 255, 255);
+    height:50px;
+    
+}
+
+   input,label,option,select{
+    width: 400px;
+    height: 35px;
+   margin-bottom: 2px;
+   background-color:#e4f1e5;
+   border-radius: 5px;
+    border: 1px solid #ccc;
+   box-shadow: 0 1px 1px hsl(200, 60%, 50%);
+   color: rgb(1, 1, 77);
+   border: none;
+}

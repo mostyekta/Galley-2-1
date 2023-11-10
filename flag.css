@@ -1,0 +1,297 @@
+  html {
+    scroll-behavior: smooth;
+} 
+
+ *{
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
+
+ body {
+     background-color: rgb(81, 81, 118);
+ }
+
+ .dropdown {
+     grid-area: header;
+ }
+
+ .container-main {
+     grid-area: main;
+     
+     
+ }
+
+ .container {
+     display: grid;
+     grid-template-areas: 'header header header'
+                           'main main main'
+                           'main main main'
+                           'main main main'
+                           'main main main';
+    height: 100vh;                     
+ }
+
+ nav#dropdown {
+     background-color: hsl(240, 100%, 19%);
+     box-shadow: 0 5px 5px hsl(240, 100%, 10%);
+ }
+
+ nav#dropdown a {
+     color: hsl(240, 100%, 100%);
+     text-decoration: none;
+     padding: 25px;
+     display: inline-block;
+
+ }
+
+ ul {
+     /* margin: 0;  */
+     /* padding: 0; */
+     list-style: none;
+ }
+
+ nav#dropdown a:hover {
+     color: hsl(240, 87%, 90%);
+     background-color: hsl(240, 100%, 30%);
+ }
+
+ nav#dropdown ul {
+     display: flex;
+ }
+
+ nav#dropdown ul li {
+     position: relative;
+ }
+
+ nav#dropdown ul ul {
+     display: block;
+     position: absolute;
+     margin-top: 4.5px;
+     z-index: 1;
+ }
+
+ nav#dropdown ul ul li {
+     white-space: nowrap;
+ }
+
+
+ nav#dropdown li {
+     background-color: hsl(240, 100%, 19%);
+     border: 1px solid rgba(136, 136, 245, 0.288);
+ }
+
+ nav#dropdown ul ul {
+     display: none;
+ }
+
+ nav#dropdown ul li:hover>ul {
+     display: block;
+ }
+  
+ .container-main {
+    display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   justify-content: space-around; 
+   /* display: grid;
+   grid-template-columns:repeat(3,1fr);
+   grid-template-rows:repeat(3,1fr);
+   gap: 20px;
+   height: 100vh; */
+}
+
+.flag-france,
+.flag-italia {
+   height: 200px;
+   width: 300px;
+   border: 1px solid black;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   margin-top: 20px;
+
+}
+
+.flag-Tyskland {
+   display: grid;
+   grid-template-rows: 1fr 1fr 1fr;
+   height: 200px;
+   width: 300px;
+   margin-top: 20px;
+   border: 1px solid black;
+}
+
+.flag-sweden {
+   background-color: yellow;
+   height: 220px;
+   width: 328px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+
+.blue-sv1 {
+   background-color: rgb(21, 21, 181);
+   border: 1px solid black;
+   width: 120px;
+   height: 92px;
+}
+
+.blue-sv2 {
+   background-color: rgb(21, 21, 181);
+   height: 92px;
+   width: 164px;
+   color: white;
+   text-align: center;
+}
+
+.blue-sv3 {
+   background-color: rgb(21, 21, 181);
+   border: 1px solid black;
+   width: 120px;
+   height: 92px;
+   margin-top: 35px;
+ 
+}
+
+.blue-sv4 {
+   background-color: rgb(21, 21, 181);
+   height: 93px;
+   width: 164px;
+   margin-top: 35px;
+}
+
+.flag-schweiz{
+   background-color: rgb(255, 0, 0);
+   height: 200px;
+   width: 300px;
+   position: relative;
+   border: 1px solid black;
+}
+.white-sh1{
+   background-color: white;
+   width: 40px;
+   height: 130px;
+   margin-top: 40px;
+   margin-left: 130px;
+   position: absolute;
+}
+.colum-white{
+   background-color: white;
+   width: 130px;
+   height: 40px;
+   margin-left: 85px;
+   margin-top: 82px;
+   position: absolute;
+   text-align: center;
+   color:red;
+   
+}
+
+.flag-schweiz2{
+   background-color: rgb(255, 0, 0);
+   height: 200px;
+   width: 300px;
+   border: 1px solid black;
+   position: relative;
+   
+}
+
+.white-sh2{
+   background-color: white;
+   width: 40px;
+   height: 130px;
+    margin-top: 40px;
+   margin-left: 130px;
+   transform :rotate(45deg);
+   position: absolute;
+
+  
+}
+.colum-white2{
+   background-color: white;
+   width: 130px;
+   height: 40px;
+   margin-left: 85px;
+  transform: rotate(45deg);
+  position: absolute;
+  margin-top: 80px;
+   
+}
+.flag-grekland{
+   background-color: rgb(35, 2, 184);
+   height: 200px;
+   width: 300px;
+   position: relative;
+   border: 1px solid black;
+}
+.colum-vit-gr1 ,.colum-vit-gr2{
+    background-color: white;
+    height: 25px;
+    width: 300px;
+    margin-top: 150px;
+  position: absolute;
+}
+.colum-vit-gr2{
+  margin-top: 100px; 
+  text-align: center;
+}
+.colum-vit-gr3 {
+    background-color: white;
+    height: 20px;
+    width: 110px;
+    margin-top: 35px;
+  position: absolute;
+}
+.colum-vit-gr4{
+   margin-left: 40px;
+   background-color:white;
+   width: 20px;
+   height: 100px;
+   position: absolute;
+}
+.colum-vit-gr5{
+   margin-left: 110px;
+   margin-top: 56px;
+   background-color:white;
+   width: 190px;
+   height: 25px;
+   position: absolute;
+}
+.colum-vit-gr6{
+   margin-left: 110px;
+   margin-top: 10px;
+   background-color:white;
+   width: 190px;
+   height: 25px;
+   position: absolute;
+}
+ 
+ 
+.blue {
+   background-color: rgb(21, 21, 181);
+}
+
+.white {
+   background-color: white;
+   text-align: center;
+
+}
+
+.red {
+   background-color: red;
+   text-align: center;
+   color: white;
+}
+
+.black {
+   background-color: black;
+}
+
+.yellow {
+   background-color: yellow;
+}
+
+.green {
+   background-color: green;
+}
+ 

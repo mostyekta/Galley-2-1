@@ -1,0 +1,83 @@
+  html {
+    scroll-behavior: smooth;
+}   
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+ body{
+    background-image: url('natur2.webp');
+    background-position: center;
+ }
+ 
+nav#dropdown {
+    background-color: hsl(240, 100%, 19%);
+    box-shadow: 0 5px 5px hsl(240, 100%, 10%);
+}
+
+nav#dropdown a {
+    color: hsl(240, 100%, 100%);
+    text-decoration: none;
+    padding: 25px;
+    display: inline-block;
+}
+
+ul {
+    /* margin: 0;  */
+    /* padding: 0; */
+    list-style: none;
+}
+
+nav#dropdown a:hover {
+    color: hsl(240, 87%, 90%);
+    background-color: hsl(240, 100%, 30%);
+}
+
+nav#dropdown ul {
+    display: flex;
+}
+
+nav#dropdown ul li {
+    position: relative;
+}
+
+nav#dropdown ul ul {
+    display: block;
+    position: absolute;
+    margin-top: 4.5px;
+     z-index: 1; 
+}
+
+nav#dropdown ul ul li {
+    white-space: nowrap;
+}
+
+
+nav#dropdown li {
+    background-color: hsl(240, 100%, 19%);
+    border: 1px solid rgba(136, 136, 245, 0.288);
+}
+
+nav#dropdown ul ul {
+    display: none;
+}
+
+nav#dropdown ul li:hover>ul {
+    display: block;
+}
+
+.text {
+    color: white;
+    text-align: center;
+}
+
+.text h1 {
+    background-color: rgba(0, 17, 255, 0.068);
+     font-size: 40px; 
+    margin-top: 180px;
+    font-family: "Sofia", sans-serif;
+    
+  }
